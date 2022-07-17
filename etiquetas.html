@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETIQUETAS HTML</title>
+</head>
+<body>
+                    <!-- ETIQUETAS HTML-->
+
+                <!-- las etiquetas por lo general vienen acompañadas de: -->
+                <!-- una variable, un atributo y ese atributo con un valor -->
+
+            <!-- ANCLAS: <a href=""></a>
+                    sirven para redireccionar a otros sitios-->
+    
+    <a href="https://www.google.com.ar/?hl=es"> Click Aquí para ir a Google </a>
+    <hr>
+
+            <!-- BOTONES: <button></button> -->
+
+    <button name="soy un boton" type=""> Soy un boton </button>    
+
+        <!-- TYPE O TIPOS DE BOTON-->
+                <!--sumbit: en general se usa en formularias y necesito "enviar/subir" los datos cargados
+                    reset:  ""    ""   se usa para borrar los datos cargados 
+                    button -->
+
+    <hr>
+    
+            <!-- INPUT -->
+
+    <input type="text" placeholder="nombre">
+    <input type="number" placeholder="numeros">
+    <input type="date">
+    <input type="email" placeholder="correo@gmail.com">
+    <input type="password" placeholder="contraseña">
+    <input type="checkbox">
+    <input type="radio">
+
+       <!-- TYPE O TIPOS DE INPUT -->
+                <!--TEXT:       para escribir texto (tamien recive otros caracteres: números, !, ?, etc)
+                    NUMBER      para escribir números
+                    DATE        para escribir fechas (desplega un calendario)
+                    EMAIL       para escribir emails
+                    PASSWORD    para escirbir contraseñas(oculta lo que escribimos)
+                    CHECKBOX    para escribir una casilla de selección
+                    RADIO       para escribir una casilla de unica opción -->
+                    
+        <!-- ATRIBUTO: PLACEHOLDER="" 
+                    en general acompaña a los input y sirve para mostrar una "instrucción"-->
+
+    <hr>
+
+            <!-- LOS LABEL: <label for=""></label> -->
+                    <!-- son la "leyenda" que acompaña a los imput, casi siempre que se vea un imput vendrá acompañado de un label -->
+
+        <label for="dni"> DNI </label>
+        <input type="number" id="dni">
+                    <!-- los id="" son atributos con los que vamos a dar un nombre para poder identificarlos -->
+
+    <hr>
+        
+            <!-- LOS TITULOS: H1 -->
+    
+    <h1> soy un titulo </h1>
+    <h2> soy un 2do titulo </h2>
+
+    <hr>
+
+            <!-- LOS PARRAFOS: <P></P> -->
+
+    <p> hola soy un parrafo </p>
+    <p> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quibusdam, ratione quod dolore reprehenderit impedit 
+        labore necessitatibus obcaecati ullam ipsam excepturi nobis deleniti possimus veritatis quae repudiandae recusandae 
+        numquam voluptas!
+    </p>
+
+            <!-- TEXT AREA: <textarea></textarea> -->
+                    <!-- sirve para escribir un cuadro de texto, que se puede agrandar o achicar -->
+
+    <textarea></textarea>
+
+    <hr>
+
+            <!-- SELECTOR: <select name="" id=""></select> -->
+                    <!-- sirve para seleccionar entre distintas opciones -->
+
+    <select>
+        <option > opcion 1</option>
+        <option > opcion 2</option>
+    </select>
+
+    <br>
+
+    <label for="mate">¿Te gusta el mate?</label>
+        <select id="mate">
+            <option>si</option>
+            <option>no</option>
+            <option>asqueroso</option>
+        </select>
+
+    <hr>
+
+            <!-- IMGANES: <img src="" alt=""> -->
+                    <!-- sirve para mostrar una imagen (en src="AQUÍ VA LA DIRECCIÓN") -->
+                    <!-- el alt="" sirve para dar una descripcion de la imagen -->
+
+    <img src="https://cf.ltkcdn.net/gatos/images/orig/242328-1600x1030-gato-negro.jpg" alt="imagen de un gatito negro">
+
+    <hr>
+
+            <!-- FORMULARIOS O FORM: <form action=""></form> -->
+                    <!-- es un agrupador, se usan en general para agrupar inputs con sus labels, como "formularios" -->
+
+    <form action="">
+        <label for="correo"> Ingrese su correo electronico </label>
+        <input type="email" id="correo" placeholder="correo@hotmail.com">
+        <button type="submit"> Enviar </button>
+        <button type="reset"> Borrar </button>
+                    <!-- el button en este caso solo funcionara con este form, si uso el boton sumbit, mandará la data de este form -->
+    </form>
+
+    <hr>
+
+
+            <!-- SECCIONES: <section></section> -->
+                    <!-- sirven para marcar las diferentes secciones de nuestra pagina (el padre de los div) -->
+
+    <section>
+
+            <!-- DIVISORES: <div></div> -->
+                    <!-- sirven para "contener" etiquetas, datos, etc. -->
+
+        <div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+            <!-- LISTAS ORDENADAS: <ol></ol> -->
+                    <!-- las "ol" son listas ordenadas, y dentro tienen "li" que son los elementos de la lista -->
+
+    <ol> lista del super y tipos de productos
+        <li> caramelos
+            <ul>
+                <li> de chocolate</li>
+                <li> de miel</li>
+            </ul>
+        </li>
+        <li> sindor 
+            <ul>
+                <li> chiquita </li>
+                <li> grande </li>
+            </ul>
+        </li>
+        <li> galletas 
+            <ul>
+                <li> polvoritas </li>
+                <li> merengadas </li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+            <!-- LISTAS DESORDENADAS: <ul></ul> -->
+                    <!-- las "ul" son listas desordenadas, y dentro tienen "li" que son los elementos de la lista -->
+
+    <ul> PELICULAS Y 2 razones de porque ME GUSTARON
+
+        <li> el laberinto del fauno
+            <ol>
+                <li> tiene un fauno </li>
+                <li> ya dije que tiene un fauno? </li>
+            </ol>
+        </li>
+        <li> alicia en el pais de las maravillas 
+            <ol>
+                <li> muchos personajes buenos </li>
+                <li> el bandersnach </li>
+            </ol>
+        </li>
+        <li> buscando a nemo
+            <ol>
+                <li> nadaremos, nadaremos</li>
+                <li> en el mar, el mar</li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+            <!-- TIPOS DE LETRAS: -->
+
+    <small> chiquita </small>   
+                    <!-- hace la letra chiquita -->
+    <i> italica </i>
+                    <!-- inclina la letra -->
+    <del> tachada </del>
+                    <!-- tacha con una linea la letra -->
+    <strong> negrita CON IMPORTANCIA </strong>
+                    <!-- hace negrita la letra, a diferencia de b, esta es para remarcar algo importante de nuestra pagina -->
+    <b> negrita comun </b> 
+                    <!-- hace negrita la letra -->
+    <marquee behavior="" direction=""> ola </marquee>
+                    <!-- lo acabo de descubrir xD -->
+    <mark> este es el que queria poner </mark>
+                    <!-- resalta un texto -->
+    <span> no estamos atendiendo</span>
+                    <!-- el span es una pequeña seccion de texto -->
+
+    <hr>
+
+            <!-- AGRUPADOR: <nav></nav> -->
+                    <!-- el nav es otro agrupador -->
+    <header>
+        <nav> agrupando links
+            <ul>
+                <li> <a href="https://www.google.com.ar/?hl=es"> link 1 </a> </li>
+                <li> <a href="https://www.youtube.com/"> link 2 </a>
+                <li> <a href="https://es-la.facebook.com/"> link 3 </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+            <!-- FOOTER: <footer></footer> -->
+                    <!-- pie de pagina, es otra seccion de la pagina donde se pude agrupar información -->
+
+    <footer>
+        <nav> agrupando links
+            <ul>
+                <li> <a href="https://www.google.com.ar/?hl=es"> link 1 </a> </li>
+                <li> <a href="https://www.youtube.com/"> link 2 </a>
+                <li> <a href="https://es-la.facebook.com/"> link 3 </a> </li>
+            </ul>
+        </nav>
+    </footer>
+
+            <!-- TABLAS: <table></table> -->
+                    <!-- tablas de excel -->
+
+    <table>
+        <tbody>
+            <tr>
+                <th>pelicula</th>
+                <th>serie</th>
+                <th>novela</th>
+            </tr>
+            <tr>
+                <td>el laberinto del fauno</td>
+                <td>los 100</td>
+                <td>betty la fea</td>
+            </tr>
+            <tr>
+                <td>en los huesos</td>
+                <td>perdidos en el espacio</td>
+                <td>ecomoda xD</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
